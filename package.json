@@ -1,0 +1,26 @@
+{
+  "name": "lab_ketnoidv",
+  "version": "1.0.0",
+  "description": "Lab 3 - Ket noi va duy tri ket noi giua cac service",
+  "main": "fee-service/server.js",
+  "scripts": {
+    "start:fee": "node fee_service/server.js",
+    "start:bank": "node bank_service/server.js",
+    "start:bank:delay": "cross-env DELAY_MS=5000 node bank_service/server.js",
+    "start:bank:drop": "cross-env DROP_RATE=0.3 node bank_service/server.js",
+    "start:bank:fail": "cross-env FAIL_RATE=0.3 node bank_service/server.js",
+    "test:p3": "node test-scripts/test_scenario_3.js",
+    "test:p4": "node test-scripts/test_scenario_4.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
